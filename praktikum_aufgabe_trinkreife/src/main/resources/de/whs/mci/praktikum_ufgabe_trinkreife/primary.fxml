@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="650.0" stylesheets="@CascadeStyleSheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.whs.mci.praktikum_ufgabe_trinkreife.Controller">
+   <children>
+      <HBox fx:id="hbox" layoutY="42.0" prefHeight="50.0" prefWidth="650.0">
+         <children>
+            <Rectangle fx:id="linkesSchieber" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Rectangle id="rect1" fx:id="bereichZuFrueh" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="LIGHTGRAY" strokeType="INSIDE" strokeWidth="0.0" styleClass="rectangle" />
+            <Rectangle id="rect2" fx:id="bereichAufsteigend" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rectangle" />
+            <Rectangle id="rect3" fx:id="bereichOptimal" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rectangle" />
+            <Rectangle id="rect4" fx:id="bereichAbsteigend" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rectangle" />
+            <Rectangle id="rect5" fx:id="bereichUngeniessbar" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rectangle" />
+         </children>
+      </HBox>
+      <StackPane layoutY="93.0" prefHeight="25.0" prefWidth="650.0">
+         <children>
+            <HBox prefHeight="25.0" prefWidth="650.0">
+               <children>
+                  <Label fx:id="leerLabel" prefHeight="25.0" prefWidth="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="anfangsJahrdesSpanne" prefHeight="25.0" prefWidth="300.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="endesJahrderSpanne" prefHeight="25.0" prefWidth="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="aktuellesJahr" prefHeight="25.0" prefWidth="50.0" textFill="#ed0404">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <StackPane layoutX="50.0" layoutY="42.0" prefHeight="50.0" prefWidth="550.0">
+         <children>
+            <HBox layoutY="40.0" prefHeight="50.0" prefWidth="550.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f500" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="250.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f500" height="50.0" stroke="#ec0909" strokeType="INSIDE" strokeWidth="3.0" width="50.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f500" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="250.0" />
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</Pane>

@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 20 Oct 2021, 00:33:19
+    Author     : Abidi
+*/
+.rectangle {
+    -fx-fill: #00FF00;
+}
+
+#rect1 {
+    -fx-fill: #c0c0c0;
+}
+#rect2 {
+    -fx-fill : linear-gradient(to right, #c0c0c0, #00ff00);
+}
+#rect3 {
+    -fx-fill :#00ff00;
+}
+#rect4 {
+    -fx-fill : linear-gradient(to right, #00ff00, #ffff00)
+}
+#rect5 {
+    -fx-fill :#ffff00;
+}
